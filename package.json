@@ -1,5 +1,9 @@
 {
-    "name": "@jmlopez-rod/example-library",
+    "name": "@jmlopez-rod/example-lib-m-flow",
     "version": "0.0.0-PLACEHOLDER",
-    "private": true
+    "repository": "https://github.com/jmlopez-rod/example-lib-m-flow",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://npm.pkg.github.com/"
+    }
 }
