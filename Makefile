@@ -1,0 +1,2 @@
+ciChecks:
+	./m/publish.sh
