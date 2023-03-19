@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkoug
+        uses: actions/checkout@v3
+      - name: M environment
+        run: pip install jmlopez-m
+      - name: Publish
+        run: ./m/publish.sh
